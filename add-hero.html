@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Clase 17 - Añadir Héroe + pseudoselector</title>
+</head>
+
+<body>
+    <header>
+        <div class="descuento">Descuento 20%</div>
+    </header>
+    <nav class="nav-bar">
+        <h1 class="title">Añadir Héroe</h1>
+    </nav>
+    <main>
+        <section>
+            <div class="add-container">
+                <h2>Añadí tu super!</h2>
+                <p>Agregá tu personaje favorito completando las opciones.</p>
+                <form>
+                    <div class="form-container">
+                        <div class="form-column">
+                            <label for="nombre">*Nombre</label>
+                            <input type="text" name="nombre" id="nombre" required>
+                            <label for="fecha">Fecha</label>
+                            <input type="date" name="fecha" id="fecha" required>
+                            <textarea name="descripcion" id="descripcion" placeholder="Descripción" required></textarea>
+                        </div>
+                        <div class="form-column">
+                            <label for="especie">*Especie</label>
+                            <select name="especie" id="especie" required>
+                                <option value="">Especie</option>
+                                <option value="piedra">Piedra</option>
+                                <option value="fuego">Fuego</option>
+                                <option value="aire">Aire</option>
+                                <option value="corazón">Corazón</option>
+                            </select>
+                            <label for="foto">Agregar Foto</label>
+                            <input type="file" name="archivo">
+                            <div class="poderes-container">
+                                <label for="poder">Poderes</label>
+                                <label for="volar" class="block espaciado">
+                                    <input class="separate" type="checkbox" name="poder" id="volar">Volar
+                                </label>
+                                <label for="superinteligencia" class="block espaciado">
+                                    <input class="separate" type="checkbox" name="poder" id="superinteligencia">Superinteligencia
+                                </label>
+                                <label for="laser" class="block espaciado">
+                                    <input class="separate" type="checkbox" name="poder" id="laser">Vista de rayo láser
+                                </label>
+                                <label for="billetera" class="block espaciado">
+                                    <input class="separate" type="checkbox" name="poder" id="billetera">Billetera gorda
+                                </label>
+                            </div>
+                            <hr>
+                            <div class="tipo-heroe-containar">
+                                <label for="personaje">Tipo de personaje</label>
+                                <label for="heroe" class="block espaciado"> 
+                                    <input class="separate" type="radio" name="tipo" id="heroe"> Héroe / Heroína
+                                </label>
+                                <label for="villano" class="block espaciado">
+                                    <input class="separate" type="radio" name="tipo" id="villano"> Villano / Villana
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="actions-container">
+                        <button class="btn-add">Añadir</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-text">
+                    <p>Todos los derechos reservados a FRONT END 1</p>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

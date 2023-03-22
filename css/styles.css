@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    border: 0;
+}
+
+.descuento {
+    background-color: #1CD1B0;
+    color: #000;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.title {
+    background-color: #00669F;
+    padding: 40px 20px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.movie {
+    /*display: inline-block;*/
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.movie-img {
+    width: 100%;
+    height: 12rem;
+    position: absolute;
+    border-radius: 20px 20px 0 0;
+    background-size: cover;
+    background-position: center center;
+}
+
+.picture-circule {
+    /*position: absolute;
+    top: 100%;
+    left: 25%; */
+    margin-top: 8rem;
+    display: inline-block;
+    position: relative;
+}
+
+.batman {
+    background-image: url('../img/baticueva.png');
+}
+
+.girl {
+    background-image: url('../img/sky.png');
+}
+
+.maravilla {
+    background-image: url('../img/fondo-maravilla.png');
+}
+
+.superman {
+    background-image: url('../img/fondo-superman.png');
+}
+
+.corazon {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+
+.description-conteiner {
+    padding: 10px 20px 5px;
+    text-align: center;
+}
+
+.sub-title {
+    /* margin: 70px 0 20px 0;
+    text-align: center; */
+    font-weight: 400;
+    font-size: 30px;
+    color: #000;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+    margin: 30px 0;
+}
+
+.ver-mas {
+    text-decoration: none;
+    color: #fff;
+    background-color: #00669F;
+    padding: 10px 30px;
+    border-radius: 7px;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px 20px;
+    background-color: #00669F;
+    margin-top: 3rem;
+}
+
+.footer-text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.logo-footer-container {
+    width: 5rem;
+
+}
+
+.logo-footer-container img {
+    width: 100%;
+}
+
+.button-add {
+    position: fixed;
+    bottom: 1rem;
+    right: 0.5rem;
+    background-color: #00669F;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    border-radius: 50%;
+    /* display: none; */
+    text-decoration: none;
+}
+.button-add:hover{
+    background-color: #001D2D;
+}
+
+
+/* FORMULARIO AGREGAR HEROE*/
+.add-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px 50px;
+    background-color: #00669F;
+    border-radius: 49px;
+    color: #fff;
+}
+
+.add-container h2,
+.add-container>p {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    font-weight: 300;
+}
+
+.form-container input,
+.form-container select,
+textarea {
+    padding: 20px 5px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.form-container textarea {
+    flex-grow: 1;
+    resize: none;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;
+    padding: 10px 10px 20px;
+}
+
+.form-column hr{
+    border: 1px solid #ccc;
+}
+
+.block {
+    display: block;
+}
+
+.espaciado {
+    padding: 5px 0;
+}
+
+.separate {
+    margin-right: 6px;
+}
+
+.poderes-container, .tipo-heroe-container{
+    accent-color: #34CEFF;
+}
+
+.actions-container {
+    text-align: center;
+}
+
+.btn-add {
+    display: inline-block;
+    background-color: #1CD1B0;
+    color: #000;
+    padding: 20px 150px;
+    border-radius: 23px;
+    font-size: 40px;
+    font-weight: 700;
+}
+.btn-add:hover{
+    background-color: #001D2D;
+    color: #fff;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, textarea:focus, select:focus :nth-child(odd){
+    background-color:#ccc ;
+    outline: none;
+}
+
+input[type="text"]:valid, input[type="date"]:valid, textarea:valid, select:valid{
+    border: 4px solid green;
+}
+
+
+
+@media screen and (max-width: 830px) {
+    .cards-container {
+        flex-wrap: wrap;
+    }
+
+    .movie {
+        width: 40%;
+        margin: 50px 0;
+    }
+
+    .button-add {
+        display: block;
+    }
+
+    .form-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-column{
+        width: 100%;
+    }
+    .btn-add{
+        padding: 10px 80px;
+        font-size: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie {
+        width: 90%;
+        margin-top: 50px 25px;
+    }
+
+    .movie:last-child {
+        display: none;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .logo-footer-container {
+        margin-top: 1rem;
+    }
+
+    .description {
+        margin: 15px;
+    }
+
+    .button-add {
+        padding: 0.5rem 1rem;
+    }
+
+    .add-container{
+        width: 95%;
+    }
+}
